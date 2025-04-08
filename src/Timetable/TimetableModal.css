@@ -1,0 +1,153 @@
+/* ===== 모달 전체 스타일 ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* ===== 모달 박스 ===== */
+  .modal-content {
+    background: white;
+    padding: 24px 20px;
+    border-radius: 12px;
+    width: 320px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* ===== 제목 (과목명) ===== */
+  .modal-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #004098; /* 확인 버튼과 색상 통일 */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== 정보 한 줄 ===== */
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 6px 0;
+    justify-content: flex-start;
+  }
+  
+  /* ===== 라벨 (교수/시간/요일) ===== */
+  .info-label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+    min-width: 70px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  /* ===== 값 (이름, 시간 등) ===== */
+  .info-value {
+    font-size: 17px;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  /* ===== 교수 선택 줄 (드롭다운 or 텍스트 + 버튼) ===== */
+  .professor-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 6px 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .professor-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .professor-name {
+    font-size: 17px;
+    color: #000;
+  }
+  
+  /* ===== 드롭다운 스타일 ===== */
+  .modal-select {
+    height: 26px;
+    font-size: 13px;
+    padding: 0 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    line-height: 1.1;
+  }
+  
+  /* ===== 교수 변경, 저장 버튼 ===== */
+  .modal-edit-btn,
+  .modal-save-btn {
+    background-color: #004098; /*  확인 버튼 색상으로 통일 */
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+  }
+  
+  .modal-edit-btn:hover,
+  .modal-save-btn:hover {
+    background-color: #1e3a80; /* 동일한 hover 효과 */
+  }
+  
+  /* ===== 하단 버튼 컨테이너 ===== */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 16px;
+  }
+  
+  /* ===== 확인/삭제 버튼 ===== */
+  .modal-confirm-btn,
+  .delete-btn {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-confirm-btn {
+    background-color: #004098;
+    color: white;
+  }
+  
+  .modal-confirm-btn:hover {
+    background-color: #1e3a80;
+  }
+  
+  .delete-btn {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c9302c;
+  }
